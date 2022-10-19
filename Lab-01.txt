@@ -620,6 +620,23 @@ int main()
 
 Exercício 43-----
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+   float t, td, p3, cv, cp;
+   printf("Digite o valor do produto: ");
+   scanf("%f", &t);
+   td= (t*90)/100;
+   p3= t/3.0;
+   cv= (td*5)/100;
+   cp= (t*5)/100;
+   printf("O valor do produto com desconto eh: %f\n", td);
+   printf("O valor de cada parcela, das 3 sem juros, fica: %f\n", p3);
+   printf("O valor da comissao do vendedor sobre produto vendido a vista fica: %f\n", cv);
+   printf("O valor da comissao do vendedor sobre o produto parcelado fica: %f\n", cp);
+   return 0;
+}
 
 
 Exercício 44-----
