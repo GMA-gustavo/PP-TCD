@@ -727,32 +727,26 @@ Exercício 49-----
 
 int main()
 {   int h1, m1, s1, dh, dm, ds, h2, m2, s2, d, rs, rm, rh;
-    printf("Digite o horario atual, em horas minutos e segundos, e a duracao do experimento, tbm em horas minutos e segundos: \n");
-    scanf("%d %d %d %d %d %d", &h1, &m1, &s1, &dh, &dm, &ds);
+    printf("Digite o horario atual, em horas minutos e segundos, e a duracao do experimento, em segundos: \n");
+    scanf("%d %d %d %d", &h1, &m1, &s1, &ds);
+    dh=ds/3600;
+    dm=(ds%3600)/60;
+    ds=(ds%3600)%60;
     rs=0;
     rm=0;
     rh=0;
      d=0;
     s2=s1+ds;
-    if(s2>=60){
-            rs=s2/60;
-            s2=s2%60;
-            m2=m1+dm+rs;}
-    else{
-            m2=m1+dm;
-    };
-    if(m2>=60){
-            rm=m2/60;
-            m2=m2%60;
-            h2=h1+dh+rm;
-    }
-    else{
-            h2=h1+dh;
-    }
-    if(h2>=24){
-             d=h2/24;
-            h2=h2%24;
-    }
+    if(s2>=60){rs=s2/60;
+               s2=s2%60;
+               m2=m1+dm+rs;}
+    else{m2=m1+dm;};
+    if(m2>=60){rm=m2/60;
+               m2=m2%60;
+               h2=h1+dh+rm;}
+    else{h2=h1+dh;}
+    if(h2>=24){d=h2/24;
+               h2=h2%24;}
     printf("O horario do termino da experiencia vai ser: \n%d dias %d:%d,%d",d,h2,m2,s2);
     return 0;
 }
