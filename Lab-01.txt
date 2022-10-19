@@ -629,7 +629,7 @@ Exercício 44-----
 
 int main()
 {   float hd, ha, nd;
-    printf("Digite a altura do degrau e a altura que deseja alcancar: ");
+    printf("Digite a altura do degrau e a altura que deseja alcancar, em centimetros: ");
     scanf("%f %f", &hd,&ha);
     nd=ha/hd;
     printf("O numero de degraus para alcancar a altura desejada eh: %f",nd);
