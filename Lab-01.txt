@@ -710,7 +710,7 @@ Exercício 49-----
 
 int main()
 {   int h1, m1, s1, dh, dm, ds, h2, m2, s2, d, rs, rm, rh;
-    printf("Digite o horario atual, em horas minutos e segundos, e a duração do experimento, tbm em horas minutos e segundos: \n");
+    printf("Digite o horario atual, em horas minutos e segundos, e a duracao do experimento, tbm em horas minutos e segundos: \n");
     scanf("%d %d %d %d %d %d", &h1, &m1, &s1, &dh, &dm, &ds);
     rs=0;
     rm=0;
