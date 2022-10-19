@@ -744,3 +744,66 @@ int main()
 Exercício 50-----
 
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+   int an, i, aa;
+   printf("Digite o ano atual e a idade: ");
+   scanf("%d %d", &aa, &i);
+   an=aa-i;
+   printf("O ano de nascimento eh: %d", an);
+   return 0;
+}
+
+Exercício 51-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+   float x, y, d;
+   printf("Digite as coordenadas x e y: ");
+   scanf("%f %f", &x, &y);
+   d=sqrt((x*x)+(y*y));
+   printf("A distancia da origem eh: %f", d);
+   return 0;
+}
+
+
+Exercício 52-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+   float t, a1, a2, a3, p1, p2, p3, i;
+   printf("Digite o valor do premio: ");
+   scanf("%f", &t);
+   printf("Digite o valor dado por cada amigo: ");
+   scanf("%f %f %f", &a1, &a2, &a3);
+   i= a1+a2+a3;
+   p1 = (a1/i)* t;
+   p2 = (a2/i)* t;
+   p3 = (a3/i)* t;
+   printf("O valor que cada amigo recebeu foi: %f %f %f", p1, p2, p3);
+   return 0;
+}
+
+
+Exercício 53-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+   float c, l, p, vt, vf;
+   printf("Digite as medidas do comprimento e da largura, em metros: ");
+   scanf("%f %f", &c, &l);
+   printf("Digite o preço por cada metro de tela: ");
+   scanf("%f", &vt);
+    p= c+c+l+l;
+   vf= p*vt;
+   printf("O valor final gasto para colocar tela em volta de todo o terreno eh: %f", vf);
+   return 0;
+}
