@@ -1,0 +1,371 @@
+Exercício 1-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+     float x, y;
+     printf("Digite dois numeros diferentes: \n");
+     scanf("%f %f", &x, &y);
+     if(x>y){ printf("Esse eh o maior numero: %f", x);}
+     else{ printf("Esse eh o maior numero: %f", y);}
+     return 0;
+}
+
+
+Exercício 2-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   float x;
+    printf("Digite um numero:");
+    scanf("%f", &x);
+    if(x>0){ x=sqrt(x);
+             printf("A raiz quadrada desse numero eh: %f", x);
+    }
+    else{printf("Esse numero eh invalido");};
+    return 0;
+}
+
+
+Exercício 3-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   float x;
+    printf("Digite um numero:");
+    scanf("%f", &x);
+    if(x>0){ x=sqrt(x);
+             printf("A raiz quadrada desse numero eh: %f", x);
+    }
+    else{ x=x*x;
+          printf("O quadrado desse numero eh: %f", x);};
+    return 0;
+}
+
+Exercício 4-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   float x;
+    printf("Digite um numero:");
+    scanf("%f", &x);
+    if(x>0){ printf("A raiz quadrada desse numero eh: %f", x=sqrt(x));
+             printf("O quadrado desse numero eh: %f", x=x*x*x*x);
+    }else{ 
+             printf("Digite um numero positivo");
+    }
+    return 0;
+}
+
+Exercício 5-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   int x;
+    printf("Digite um numero inteiro:");
+    scanf("%d", &x);
+    if(0==x%2){
+        printf("Esse numero eh par");
+    }else{
+        printf("Esse numero eh impar");
+    }
+    return 0;
+}
+
+Exercício 6-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   int x, y;
+    printf("Digite dois numeros inteiros:");
+    scanf("%d %d", &x, &y);
+    if(x>y){ printf("Esse eh o maior numero: %d", x);
+             x=x-y;
+             printf("A diferença entre eles eh: %d \n", x);
+    }else{ printf("Esse eh o maior numero: %d \n", y);
+           y=y-x;
+           printf("A diferença entre eles eh: %d", y);
+    }
+    return 0;
+}
+
+Exercício 7-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   int x, y;
+    printf("Digite dois numeros inteiros:");
+    scanf("%d %d", &x, &y);
+    if(x==y){
+            printf("Numeros iguais");
+            return 0;
+    }
+    if(x>y){
+            printf("Esse eh o maior numero: %d", x);
+
+    }else{
+            printf("Esse eh o maior numero: %d \n", y);
+    }
+    return 0;
+}
+
+Exercício 8-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   float x, y, m;
+    printf("Digite as duas notas:");
+    scanf("%f %f", &x, &y);
+    if(x>0&&x<10&&y>0&&y<10){
+            m=(x+y)/2.0;
+            printf("A media da sua nota eh: %f", m);
+    }else{
+            printf("Essas notas sao invalidas");
+    }
+    return 0;
+}
+
+Exercício 9-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   float x, y;
+    printf("Digite seu salario e o valor da prestacao:");
+    scanf("%f %f", &x, &y);
+    if(y>x*0.2){
+                printf("Emprestimo nao concedido");
+    }else{
+            printf("Emprestimo concedido");
+    }
+    return 0;
+}
+
+Exercício 10-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   float a, p;
+    int   s, m, h;
+    printf("Digite sua altura: ");
+    scanf("%f", &a);
+    printf("\nQual seu sexo (homem=1 ou mulher=0): ");
+    scanf("%d", &s);
+    if(s==1){
+             p = (72.7*a) - 58.0;
+             printf("\nSeu peso ideal eh: %f", p);
+    }else{
+          p=(62.1*a) - 44.7;
+          printf("\nSeu peso ideal: %f", p);
+    }
+    return 0;
+}
+
+
+Exercício 11
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   int n, soma, c, d, u;
+    printf("Digite um numero inteiro com 3 algarismos: ");
+    scanf("%d", &n);
+    if(n>0){
+              c= n/100;
+              d=(n%100)/10;
+              u=(n%100)%10;
+           soma= c+d+u;
+             printf("A soma de todos os algarismos eh: %d", soma);
+    }else{
+          printf("Numero invalido");
+    }
+    return 0;
+}
+
+
+Exercício 12-----
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{  float x;
+   printf("Digite um numero inteiro: ");
+   scanf( "%f" , &x);
+   if(x>0){
+            x=log10(x);
+            printf("O logaritmo desse numero eh: %f", x);
+    }else{
+                   printf("Esse numero eh invalido");
+    }
+    return 0;
+}
+
+
+Exercício 13-----
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{  float p1, p2, p3, media;
+   printf("Digite a nota das 3 provas respectivamente: ");
+   scanf( "%f %f %f" , &p1, &p2, &p3);
+   media=(p1+p2+(p3*2.0))/4;
+   if(media>=60.0){
+                   printf("Voce foi aprovado com a media de: %f", media);
+    }else{
+                   printf("Voce foi reprovado com a media de: %f", media);
+    }
+    return 0;
+}
+
+
+Exercício 14----- ********************************************************************************
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{  float tl, as, ef, p1, p2, p3, m;
+   printf("Digite as notas dos trabalhos na devida ordem: ");
+   scanf("%f &f %f" , &tl, &as, &ef);
+   p1=tl*2.0;
+   p2=as*3.0;
+   p3=ef*5.0;
+   m=(p1+p2+p3)/10.0;
+   if(m>=5) {
+            printf("Voce foi aprovado com a media de: %f", m);
+            return 0;
+    }else{
+            if(m>=3){
+                          printf("Voce ficou de recupecao com a media de: %f", m);
+            }else{
+                          printf("Voce reprovou com a media de: %f", m);
+            }
+    }
+    return 0;
+}                 ********************************************************************************
+
+
+Exercício 15-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{  int n;
+   printf("Digite um numero de 1 a 7: ");
+   scanf("%d", &n);
+   switch(n){
+             case(1): printf("domigo");break;
+             case(2): printf("segunda");break;
+             case(3): printf("terca");break;
+             case(4): printf("quarta");break;
+             case(5): printf("quinta");break;
+             case(6): printf("sexta");break;
+             case(7): printf("sabado");break;
+             default: printf("Numero invalido");break;
+   }
+    return 0;
+}
+
+
+Exercício 16-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{  int n;
+   printf("Digite um numero de 1 a 12: ");
+   scanf("%d", &n);
+   switch(n){
+             case(1): printf("janeiro");break;
+             case(2): printf("fevereiro");break;
+             case(3): printf("marco");break;
+             case(4): printf("abril");break;
+             case(5): printf("maio");break;
+             case(6): printf("junho");break;
+             case(7): printf("julho");break;
+             case(8): printf("agosto");break;
+             case(9): printf("setembro");break;
+             case(10): printf("outubro");break;
+             case(11): printf("novembro");break;
+             case(12): printf("dezembro");break;
+             default: printf("Numero invalido");break;
+   }
+    return 0;
+}
+
+
+Exercício 17-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{  float BM, bm, h, A;
+   printf("Digite os valores da base maior e base menor: ");
+   scanf("%f %f", &BM, &bm);
+   printf("Digite o valor da altura: ");
+   scanf("%f", &h);
+   if(BM>0&&bm>0&&h>0){
+                      A=((BM+bm)*h)/2;
+                      printf("O valor da area eh: %f", A);
+   }else{
+         printf("Valores invalidos");
+   }
+    return 0;
+}
+
+
+Exercício 18-----
+
+int main()
+{  int e;
+   float n1, n2, r;
+   printf("Escolha a operacao matematica de acordo com os numero de 1 a 4 \n (1=soma) (2=subtracao) (3=multiplicacao) (4=divisao): ");
+   scanf("%d", e);
+   switch(e){
+             case(1): printf("Digite dois numeros: ");
+                      scanf("%f %f", &n1, &n2);
+                      r=n1+n2;
+                      printf("O resultado eh: %f", r);break;
+             case(2): printf("Digite dois numeros: ");
+                      scanf("%f %f", &n1, &n2);
+                      r=n1-n2;
+                      printf("O resultado eh: %f", r);break;
+             case(3): printf("Digite dois numeros: ");
+                      scanf("%f %f", &n1, &n2);
+                      r=n1*n2;
+                      printf("O resultado eh: %f", r);break;
+             case(4): printf("Digite dois numeros: ");
+                      scanf("%f %f", &n1, &n2);
+                      r=n1/n2;
+                      printf("O resultado eh: %f", r);break;
+             default: printf("Numero invalido");
+            }
+    return 0;
+}
