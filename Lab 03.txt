@@ -242,7 +242,7 @@ int main()
 }
 
 
-Exercício 14----- ********************************************************************************
+Exercício 14-----
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -250,7 +250,7 @@ Exercício 14----- *************************************************************
 int main()
 {  float tl, as, ef, p1, p2, p3, m;
    printf("Digite as notas dos trabalhos na devida ordem: ");
-   scanf("%f &f %f" , &tl, &as, &ef);
+   scanf("%f %f %f" , &tl, &as, &ef);
    p1=tl*2.0;
    p2=as*3.0;
    p3=ef*5.0;
@@ -266,7 +266,7 @@ int main()
             }
     }
     return 0;
-}                 ********************************************************************************
+}
 
 
 Exercício 15-----
