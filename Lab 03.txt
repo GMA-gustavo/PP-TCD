@@ -806,3 +806,209 @@ int main()
 
 Exercício 35----
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{  int d, m, a;
+   printf("Digite a data (dia, mes, ano): ");
+   scanf("%d %d %d", &d, &m, &a);
+   if(a<2022){
+              a=a%4;
+              if(m==2&&a==0){ if(d<=29&&d>0) printf("Data valida");
+                              else printf("Data invalida");
+                            }
+              if(m==2&&a!=0){ if(d<=28&&d>0) printf("Data valida");
+                              else printf("Data invalida");
+                            }
+              if(m==1||m==3||m==5||m==7||m==8||m==10||m==12){ if(d>0&&d<32) printf("Data valida");
+                                                              else printf("Data invalida");
+                                                            }
+              if(m==4||m==6||m==9||m==11){ if(d>0&&d<31) printf("Data valida");
+                                           else printf("Data invalida");
+                                         }
+             }else{
+                   printf("Data invalida");
+                  }
+   return 0;
+}
+
+
+Exercício 36-----
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{   float v, c;
+    printf("Digite o valor das vendas: ");
+    scanf("%f", &v);
+    if(v>=100000){
+                  c=700+(v*0.16);
+                  printf("A comissao sera de %f", c);
+    }
+    if(v<100000&&v>=80000){
+                  c=650+(v*0.14);
+                  printf("A comissao sera de %f", c);
+    }
+    if(v<80000&&v>=60000){
+                  c=600+(v*0.14);
+                  printf("A comissao sera de %f", c);
+    }
+    if(v<60000&&v>=40000){
+                  c=550+(v*0.14);
+                  printf("A comissao sera de %f", c);
+    }
+    if(v<40000&&v>=20000){
+                  c=500+(v*0.14);
+                  printf("A comissao sera de %f", c);
+    }
+    if(v<20000){
+                  c=400+(v*0.14);
+                  printf("A comissao sera de %f", c);
+    }
+    return 0;
+}
+
+
+
+Exercício 37-----
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{   int he, me, hs, ms, duracao;
+    printf("Digite o horario de entrada: ");
+    scanf("%d %d", &he, &me);
+    printf("Digite o horaio de saida: ");
+    scanf("%d %d", &he, &me);
+    me = (he*60)+me;
+    ms = (hs*60)+ms;
+    if(ms>me){
+      duracao = (ms-me)/60;
+      duracao += ((ms-me) % 60) > 0 ? 1 : 0;
+    }
+    else{
+      duracao = (1440-me+ms)/60;
+      duracao += ((1440+ms-me) % 60) > 0 ? 1 : 0;
+    }
+    if(duracao<=2){
+      printf("O total a pagar sera: %d",duracao);
+    }
+    else if(duracao<=4){
+      printf("O total a pagar sera: %f",2+(duracao-2)*1.4);
+    }
+    else{
+      printf("O total a pagar sera: %f",4.8+(duracao-4)*2);
+    }
+    return 0;
+}
+
+
+Exercício 38-----
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{  int d, m, a;
+   printf("Digite a data (dia, mes, ano): ");
+   scanf("%d %d %d", &d, &m, &a);
+   if(a<2022){
+              a=a%4;
+              if(m==2&&a==0){ if(d<=29&&d>0) printf("Data valida");
+                              else printf("Data invalida");
+                            }
+              if(m==2&&a!=0){ if(d<=28&&d>0) printf("Data valida");
+                              else printf("Data invalida");
+                            }
+              if(m==1||m==3||m==5||m==7||m==8||m==10||m==12){ if(d>0&&d<32) printf("Data valida");
+                                                              else printf("Data invalida");
+                                                            }
+              if(m==4||m==6||m==9||m==11){ if(d>0&&d<31) printf("Data valida");
+                                           else printf("Data invalida");
+                                         }
+             }else{
+                   printf("Data invalida");
+                  }
+   return 0;
+}
+
+
+Exercício 39-----
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{   float sa, sr;
+    int ts;
+    printf("Digite o salario atual: ");
+    scanf("%f", &sa);
+    printf("Digite o tempo de servico: ");
+    scanf("%f", &ts);
+    if(sa<=500){
+      sa *=1.25;
+    }
+    else if(sa<=1000&&sa>500){
+      sa *=1.20;
+    }
+    else if(sa<=1500&&sa>1000){
+      sa *=1.15;
+    }
+    else if(sa<=2000&&sa>1500){
+      sa *=1.10;
+    }
+    else if(sa>2000){
+      sa =sa;
+      printf("Voce nao tem direito a reajuste porcentual de salario\n");
+    }
+    else{
+      printf("Voce nao tem direito a reajuste porcentual de salario\n");
+    }
+    if(ts<1){
+      printf("Voce nao tem direito a bonus de tempo de servico");
+    }
+    else if(ts>=1&&ts<=3){
+      printf("O seu salario reajustado eh: %f",sa+100);
+    }
+    else if(ts>=4&&ts<=6){
+      printf("O seu salario reajustado eh: %f",sa+200);
+    }
+    else if(ts>=7&&ts<=10){
+      printf("O seu salario reajustado eh: %f",sa+300);
+    }
+    else if(ts>10){
+      printf("O seu salario reajustado eh: %f",sa+500);
+    }
+    return 0;
+}
+
+
+Exercício 40-----
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{   float cf;
+    printf("Digite o custo de fabrica de um automovel: ");
+    scanf("%f",&cf);
+    if(cf<12000){
+      printf("O custo final do automovel sera: %f",cf*1.05);
+    }
+    else if(cf<=25000){
+      printf("O custo final do automovel sera: %f",(cf*1.10)+(cf*0.15));
+    }
+    else {
+      printf("O custo final do automovel sera: %f",(cf*1.15)+(cf*0.20));
+    }
+    return 0;
+}
