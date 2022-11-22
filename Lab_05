@@ -17,3 +17,33 @@ int main()
 
 Exercício 02-----
 
+#include <stdio.h>
+#include <stdlib.h>
+int data(int x, int y, int z){
+    switch(y){
+              case(1): printf("%d de Janeiro de %d", x, z);break;
+              case(2): printf("%d de Fevereiro de %d", x, z);break;
+              case(3): printf("%d de Marco de %d", x, z);break;
+              case(4): printf("%d de Abril de %d", x, z);break;
+              case(5): printf("%d de Maio de %d", x, z);break;
+              case(6): printf("%d de Junho de %d", x, z);break;
+              case(7): printf("%d de julho de %d", x, z);break;
+              case(8): printf("%d de Agosto de %d", x, z);break;
+              case(9): printf("%d de Setembro de %d", x, z);break;
+              case(10): printf("%d de Outubro de %d", x, z);break;
+              case(11): printf("%d de Novembro de %d", x, z);break;
+              case(12): printf("%d de Dezembro de %d", x, z);break;
+    }
+}
+int main()
+{    int r, d, m, a;
+     printf("Digite o dia: ");
+     scanf("%d", &d);
+     printf("Digite o numero do mes: ");
+     scanf("%d", &m);
+     scanf("%d", &m);
+     printf("Digite o ano: ");
+     scanf("%d", &a);
+     r=data(d,m,a);
+     return 0;
+}
