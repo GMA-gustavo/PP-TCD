@@ -1,0 +1,13 @@
+Exerício 01-----
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{    int A[6]={1,0,5,-2,-5,7};
+     printf("A soma dos termos 1, 2 e 6 eh: %d\n", A[0]+A[1]+A[5]);
+     A[3]=100;
+     for(int i=0;i<=5;i++){
+        printf(" %d \n", A[i]);
+     }
+}
