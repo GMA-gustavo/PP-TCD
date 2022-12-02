@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{   char frase[100];
+    int tamanho, i, j;
+    printf("Digite uma frase: ");
+    fgets(frase, 100, stdin);
+    tamanho=strlen(frase);
+    for(i=0;i<=99;i++){
+        if((frase[i]=='r'&&frase[i+1]==' ')||(frase[i]=='r'&&frase[i+1]=='\n')) frase[i]='r';
+        else if((frase[i]=='r'&&frase[i+1]!=' ')||(frase[i]=='r'&&frase[i+1]=='\n')){
+               frase[i]='l';
+               if(frase[i+1]=='r'){
+                  for(j=i+1;j<tamanho;j++){
+                     frase[j]=frase[j+1];
+                  }
+               };
+        }
+    }
+    printf("A frase ficara assim: \n%s", frase);
+    return 0;
+}
