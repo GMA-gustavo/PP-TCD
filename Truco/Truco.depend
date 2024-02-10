@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1675132119 source:c:\programação_em_c\programação\truco\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<locale.h>
+	<conio.h>
+	<windows.h>
+	<gconio.h>
+	<unistd.h>
+

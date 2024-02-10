@@ -1,0 +1,3 @@
+Professor, para executar nosso programa basta deixar todos
+os arquivos txt(TRUCO.txt, banner.txt e ranking.txt) na mesma pasta do executável(truetruco3001.c). Depois disso,
+apenas compilar e se divertir!!

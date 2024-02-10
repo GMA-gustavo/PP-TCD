@@ -1,0 +1,13 @@
+Lucas,20,30
+João Henrique,6,7
+Dino,0,1
+Janot,20,30
+Marcela,20,30
+Fernanda,20,31
+Ivone,20,30
+Vitorinha,20,30
+Gustavo,21,30
+Mario,20,30
+Claudiney,0,1
+Nícolas,0,1
+jonatas,1,0
